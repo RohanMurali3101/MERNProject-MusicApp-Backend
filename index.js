@@ -2,10 +2,10 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const app = express();
-const userRoutes = require("./Routes/userRoutes");
+const userRoutes = require(".Cla./Routes/userRoutes");
 const dbConnect = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/MusicPlayer");
+    await mongoose.connect("mongodb+srv://root:12345@cluster0.6vhkfmy.mongodb.net/MusicPlayer");
     console.log("Database Connected");
   } catch (error) {
     console.log("error in db connection");
